@@ -11,7 +11,10 @@
     </div>
 
 
-
+    <!--  选项  -->
+    <div class="option">
+      <Option></Option>
+    </div>
   </div>
 </template>
 
@@ -19,10 +22,11 @@
 
 import TopNavigation from "../components/TopNavigation";
 import GuideChart from "../components/GuideChart";
+import Option from "../components/Option";
 
 export default {
   name: 'Home',
-  components: {TopNavigation, GuideChart}
+  components: {TopNavigation, GuideChart,Option}
 }
 </script>
 

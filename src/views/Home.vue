@@ -15,18 +15,25 @@
     <div class="option">
       <Option></Option>
     </div>
+
+
+    <!--  热推  -->
+    <div class="recommend">
+      <Recommend></Recommend>
+    </div>
   </div>
 </template>
 
 <script>
 
-import TopNavigation from "../components/TopNavigation";
-import GuideChart from "../components/GuideChart";
-import Option from "../components/Option";
+import TopNavigation from "../components/Home/TopNavigation";
+import GuideChart from "../components/Home/GuideChart";
+import Option from "../components/Home/Option";
+import Recommend from "../components/Home/Recommend";
 
 export default {
   name: 'Home',
-  components: {TopNavigation, GuideChart,Option}
+  components: {TopNavigation, GuideChart, Option,Recommend}
 }
 </script>
 

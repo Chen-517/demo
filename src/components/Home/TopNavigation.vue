@@ -6,15 +6,11 @@
     <div class="input "><span class="iconfont">&#xe65c;</span>
       <input maxlength="30" placeholder="输入城市/景点/游玩主题" type="text">
     </div>
-    <!--    <div class="right"><span>城市</span>-->
-    <!--      <a-icon type="caret-down"/>-->
-    <!--    </div>-->
-    <!--  //////////////////////////////////////////////////  -->
     <div class="right">
-      <a-dropdown :trigger="['click']">
+      <a-dropdown :trigger="['click']" class="col">
         <a class="ant-dropdown-link" @click="e => e.preventDefault()">
           城市
-          <a-icon type="down" style="font-size: 20px" />
+          <a-icon style="font-size: 20px" type="down"/>
         </a>
         <a-menu slot="overlay">
 
@@ -75,7 +71,7 @@ export default {
     float: left;
     height: 100%;
     font-size: 30px;
-    top: -5px;
+    top: 2px;
     left: 5px;
   }
 
@@ -125,5 +121,10 @@ export default {
     height: 45px;
     width: 70px;
   }
+
+  .col {
+    color: #ffff;
+  }
+
 }
 </style>
